@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pomo Timer</title>
+    <script src="https://kit.fontawesome.com/f22b02c97a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <script src="menu.js" defer></script>
+</head>
+<body>
+    <header>
+        <!--Hamburger-->
+        <div>
+            <!-- <i id="bars" class="fas fa-bars"></i> -->
+            <div id="sideTask" class="sideTask">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div style="text-align: center;">Tasks</div><br>
+                <form action="/action_page.php">
+                    <input type="checkbox" id="task" name="task">
+                    <label for="task"> Task 1</label><br>
+                    <input type="checkbox" id="task" name="task">
+                    <label for="task"> Task 2</label><br>
+                    <input type="checkbox" id="task" name="task">
+                    <label for="task"> Task 3</label><br>
+                </form><br>
+            
+                <div style="text-align: center;">Completed Tasks </div><br>
+                <form action="/action_page.php">
+                    <input type="checkbox" id="task" name="task">
+                    <label for="task"> Task 1</label><br>
+                    <input type="checkbox" id="task" name="task">
+                    <label for="task"> Task 2</label><br>
+                    <input type="checkbox" id="task" name="task">
+                    <label for="task"> Task 3</label><br>
+                </form><br>
+            </div>
+            
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+            
+        </div>
+       
+   
+        <!--Counter-->
+        <p id="counter">Pomo: &frac14</p>
+        <!--Pomo Info-->
+        <i class="fas fa-question"></i>
+        <!--Settings-->
+        <i class="fas fa-cog"></i>
+
+        
+    </header>
+    
+    <!--Task Menu-->
+   
+    
+    <div id="tasks">
+        <ul>
+            <li id="current">
+                <input type="checkbox" class="task-check" name="task">
+                <label for="task" class="task-title">Task you want to complete</label>
+                <i class="fas fa-times"></i>
+                <br>
+                <ul class="task-body">
+                    <li class="task-pomos">?/2</li>
+                    <li class="task-description">Description</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!--Info Menu-->
+    <div id="info">
+        <h2>How to use the app!</h2>
+        <p>Something something something lorem ipsem.</p>
+    </div>
+    <!--Settings Menu-->
+    <div id="settings">
+        <h2>Settings</h2>
+        <label for="settings1">Setting 1:</label>
+        <input type="text" id="settings1" name="settings1">
+    </div>
+    <!--Main Content-->
+    <div class="content">
+        <!--Timer-->
+        <h1 id="timer">25:00</h1>
+        <!--Button-->
+        <button id="stop">Start</button>
+        <!--Current Task-->
+        <p id="current-task">No tasks stored!</p>
+    </div>
+
+
+    
+    <script src="main.js"></script>
+
+</body>
+</html>
